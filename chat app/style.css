@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url('background.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.form-box {
+    position: relative;
+    /* width: 400px;
+    height: 450px; */
+    background: transparent;
+    /* border: 2px solid yellow); */
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 40%;
+    margin-top: 10%; */
+    height: 330px;
+    width: 300px;
+    border: 1px solid #010a04;
+    padding: 30px;
+
+}
+
+h2 {
+    font-size: 2em;
+    color: #06be0c;
+    text-align: center;
+}
+
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: rgb(255, 115, 0);
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputchat{
+    height: 25px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -9px;
+}
+
+.inputbox input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    /* font-size: 1em;
+    padding:0 35px 0 5px; */
+    color: #50f006;
+}
+
+.inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    color: #5cf410;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+.forget {
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #ef1691;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forget label input {
+    margin-right: 3px;
+
+}
+
+.forget label a {
+    color: #2d0de2;
+    text-decoration: none;
+}
+
+.forget label a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #0cdc66;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.register {
+    font-size: .9em;
+    color: #5515e9;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a {
+    text-decoration: none;
+    color: #e9241e;
+    font-weight: 600;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+}
+
+
+/* chat */
+
+
+.chat-window {
+    font-family: 'roboto', sans-serif;
+    position: sticky;
+    bottom: 1;
+    left: 400px;
+    width: 450px;
+    height: 490px;
+    background-color: rgb(84, 105, 105);
+    border: 3px solid rgb(44, 10, 216);
+    margin-top: 50px;
+    background: url('background1.jpg')100%;
+
+}
+
+.chat-header {
+    background-color: #ee9f0c;
+    padding: 10px;
+    text-align: center;
+}
+
+.chat-messages {
+    height: 300px;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+.chat-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: px;
+}
+
+.chat-input input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.chat-input button {
+    background-color: #4eb6ee;
+    color: rgb(50, 11, 248);
+    border: none;
+    padding: px;
+    border-radius: 9px;
+    cursor: pointer;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+    height: 35px;
+    width: 110px;
+}
+
+.logoutchat{
+    /* width: 100px; */
+    /* float: right; */
+    height: 28px;
+    background-color: #0cdc17;
+    size: 100px;
+    
+}
+
+@media screen and (max-width: 500px) {
+    .chat-window {
+        bottom: 1;
+        left: 400px;
+        width: 450px;
+        height: 490px;
+        right: 300px;
+    }
+}
